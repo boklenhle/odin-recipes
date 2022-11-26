@@ -21,3 +21,11 @@ li {
     margin: 0;
     padding: 3.5px;
 }
+
+.dbut {
+    background-color: rgba(245, 84, 84, 0.771);
+    border-color: rgba(245, 84, 84, 0.771);
+  }
+  .dbut:hover {
+    background-color: rgb(244, 74, 74);
+  }
