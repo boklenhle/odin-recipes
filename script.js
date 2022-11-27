@@ -1,15 +1,20 @@
 const pantryInput = document.getElementById("pantryinput");
 const list = document.getElementById("list");
 const button = document.getElementById("button")
-
+const amount = document.getElementById("amount")
+const amountType = document.getElementById("amountType")
+const fractions = document.getElementById('fractions')
+const fractionsValue = fractions.value
+const amountNum = parseInt(amount)
 function inputLength() {
 	return pantryInput.value.length;
 }
 
 function createListElement() {
 	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(pantryInput.value));
+	li.appendChild(document.createTextNode(amount.value + ` ` + fractions.value + ` ` + amountType.value + ` of ` + pantryInput.value + ` `));
 	pantryInput.value = "";
+	amount.value = "";
 	// li attached to parent div
 	list.appendChild(li);
 	// button created

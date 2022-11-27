@@ -9,7 +9,28 @@
     </head>
     <body>
         <h1>Your Pantry</h1>
-        <input type="text" id="pantryinput" placeholder="In my kitchen. . .">
+        <a href="index.html">Home</a><br><br>
+        <input type="text" id="amount" placeholder="amount">
+        <label for="fractions"></label>
+        <select name="fractions" id="fractions">
+            <option value="">.0</option>
+            <option value="1/8">1/8</option>
+            <option value="1/4">1/4</option>
+            <option value="1/3">1/3</option>
+            <option value="1/2">1/2</option>
+            <option value="3/4">3/4</option>
+        </select>
+        <label for="amountType"></label>
+        <select name="amountType" id="amountType">
+            <option value="container"> Container</option>
+            <option value="piece">Piece</option>
+            <option value="bag">Bag</option>
+            <option value="packet">Packet</option>
+            <option value="pound">Lb</option>
+            <option value="ounce">Oz</option>
+            <option value="cup">Cup</option>
+        </select>
+        <input type="text" id="pantryinput" placeholder="Food">
         <button type="submit" id="button">Submit</button>
         <ul id="list">
 
