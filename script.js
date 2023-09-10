@@ -15,7 +15,7 @@ function createListElement() {
 	li.appendChild(document.createTextNode(amount.value + ` ` + fractions.value + ` ` + amountType.value + ` of ` + pantryInput.value + ` `));
 	pantryInput.value = "";
 	amount.value = "";
-	// li attached to parent div
+	// li attached to parent list
 	list.appendChild(li);
 	// button created
 	var del = document.createElement("button");
